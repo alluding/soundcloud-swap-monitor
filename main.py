@@ -134,7 +134,7 @@ class SoundCloudMonitor:
         session = Session()
         return session
 
-def read_usernames_from_file(file_path: str) -> List[str]:
+def read_file(file_path: str) -> List[str]:
     try:
         with open(file_path, "r") as file:
             usernames = [line.strip() for line in file if line.strip()]
@@ -144,6 +144,6 @@ def read_usernames_from_file(file_path: str) -> List[str]:
         return []
 
 if __name__ == "__main__":
-    usernames_to_monitor = read_usernames_from_file(Config.USERNAME_FILE_PATH)
+    usernames_to_monitor = read_file(Config.USERNAME_FILE_PATH)
     soundcloud_monitor = SoundCloudMonitor(usernames_to_monitor)
     soundcloud_monitor.monitor_usernames()
