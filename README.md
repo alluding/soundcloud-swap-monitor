@@ -21,7 +21,7 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/kyaasky/soundcloud-swap-monitor.git
-   cd soundcloud-username-monitor
+   cd soundcloud-swap-monitor
    ```
 
 2. Create a file named `usernames.txt` in the project directory and add the usernames to monitor, each on a new line.
@@ -37,7 +37,6 @@
 
 - `Config.PROXY`: Proxy configuration for making requests.
 - `Config.SLEEP_DELAY`: Sleep delay in seconds between each monitoring iteration.
-- `Config.JSON_FILE_PATH`: Path to the JSON file where user data is stored.
 - `Config.USERNAME_FILE_PATH`: Path to the file containing usernames to monitor.
 
 ## Contributing
