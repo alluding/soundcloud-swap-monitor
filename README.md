@@ -10,7 +10,7 @@
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.7
 - `requests`, `colorama` libraries. You can install them using:
   ```bash
   pip install requests colorama
